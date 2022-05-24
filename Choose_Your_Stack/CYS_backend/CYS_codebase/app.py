@@ -7,6 +7,7 @@ import os
 import zipfile
 
 absolute_path = os.path.abspath(__file__)
+parent_dir_path = os.path.dirname(os.path.dirname(os.path.dirname(absolute_path)))
 # Flask constructor takes the name of
 # current module (__name__) as argument.
 app = Flask(__name__)
@@ -30,8 +31,10 @@ def download_Object():
    temp_dict["b_port"] = request.form.get("b_port")
    #for testing only
    data = dict()
-   data["f_name"]="HTML"
+   data["f_name"]="React"
+   data["f_port"]=8010
    data["b_name"]="Flask"
+   data["b_port"]=8011
    try:
       srcFileName=util.get_template(data)
       return send_file(srcFileName, as_attachment=True)
@@ -43,4 +46,4 @@ def download_Object():
 if __name__ == '__main__':
 	# run() method of Flask class runs the application
 	# on the local development server.
-	app.run(debug = True)
+	app.run(host='127.0.0.1', port=5002 ,debug = True)
