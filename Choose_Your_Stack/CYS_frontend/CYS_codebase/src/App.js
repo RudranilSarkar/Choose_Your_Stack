@@ -42,7 +42,7 @@ export default function App() {
     <br />
     
   </div>
-  <button class="Download button2">DownloadButton</button>
+  <button class="Download button2">Download</button>
   </form>
   );
 }

@@ -22,3 +22,16 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
+  post-deploy:
+    name: Restart the servers
+    runs-on: ubuntu-latest
+    steps:
+    - shell: bash
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+        REMOTE_HOST: ${{ secrets.HOST_DNS }}
+        REMOTE_USER: ${{ secrets.USERNAME }}
+        TARGET: ${{ secrets.TARGET_DIR }}
+      run: |
+        sudo systemctl restart CYS_backend
+        Sudo Systemctl restart nginx
