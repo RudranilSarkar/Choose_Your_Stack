@@ -15,6 +15,10 @@ export default function App() {
       <label for="textbox">Details             </label>
       <input type="text" name="detail" id="detail"  placeholder="Your Details.."/>
     </div>
+    <div>
+      <label for="textbox">Baal bichi Detail             </label>
+      <input type="text" name="detail" id="detail"  placeholder="Your Details.."/>
+    </div>
     <div className="App">
       {/* Frontend custom dropdown menu */}
       <FrontDrop selected={selected} setSelected={setSelected} />
@@ -38,7 +42,7 @@ export default function App() {
     <br />
     
   </div>
-  <button class="Download button2">Download</button>
+  <button class="Download button2">DownloadButton</button>
   </form>
   );
 }
