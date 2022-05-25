@@ -12,15 +12,22 @@ temp_readme_path = os.path.join(parent_dir_path,"temp","readme.md")
 
 
 def get_template(data):
-    get_config(data)
+    get_config_ready(data)
+    get_frontend_ready(data)
     zip_directory(os.path.join(template_backend_path,str(data["b_name"])),
     os.path.join(template_frontend_path,str(data["f_name"])))
     return (temp_zip_path)
 
-def get_config(data):
+def get_config_ready(data):
     json_string = json.dumps(data)
     with open(temp_config_path,"w") as f:
         f.write(json_string)
+
+def get_frontend_ready(data):
+    if data["f_name"]=="React":
+        env_path=os.path.join(template_frontend_path,str(data["f_name"]),"hello-world-example",".env")
+        with open(env_path,"w") as f:
+            f.write("port="+str(data["f_port"]))
 
 def zip_directory(f_path,b_path):
     with zipfile.ZipFile(temp_zip_path,'w',zipfile.ZIP_DEFLATED) as zipf:

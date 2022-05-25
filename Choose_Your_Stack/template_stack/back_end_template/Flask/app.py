@@ -15,6 +15,11 @@ app = Flask(__name__)
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
 	return 'Hello World'
+
+@app.route('/connection')
+# ‘/’ URL is bound with hello_world() function.
+def connection():
+	return 'You are connected to back-end'
     
 if __name__ == '__main__':
 	# run() method of Flask class runs the application

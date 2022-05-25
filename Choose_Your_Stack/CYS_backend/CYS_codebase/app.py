@@ -4,7 +4,6 @@ from cmath import pi
 from flask import Flask, redirect, url_for, request,Response,send_file
 import util
 import os
-import zipfile
 
 absolute_path = os.path.abspath(__file__)
 parent_dir_path = os.path.dirname(os.path.dirname(os.path.dirname(absolute_path)))
@@ -19,7 +18,7 @@ app = Flask(__name__)
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
 	#return 'Hello World'
-   return absolute_path
+   return "Hi! This is the base page of Choose_Your_Stack"
 
 @app.route('/download')
 
@@ -46,4 +45,4 @@ def download_Object():
 if __name__ == '__main__':
 	# run() method of Flask class runs the application
 	# on the local development server.
-	app.run(host='127.0.0.1', port=5002 ,debug = True)
+	app.run(host='0.0.0.0', port=5002 ,debug = True)
