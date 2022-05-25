@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #fcfcfc;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 80px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+}
+
+.App, form {
+  display: inline-block;
+  padding: 15px;
+  align-items: center;
+}
+
+.dropdown {
+  width: 300px;
+  user-select: none;
+  padding: 10px 10px;
+  margin: 10px auto;
+  position: relative;
+  
+}
+.dropdown .dropdown-btn {
+  padding: 15px 20px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  color: #333;
+  width: 95%;
+}
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dropdown .dropdown-content .dropdown-item:hover {
+  background: #f4f4f4;
+  display: inline-block;
+}
+
+.Download {
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 50px;
+  width: 100px;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;
+  cursor: pointer;
+  }
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 0.8;
+}
