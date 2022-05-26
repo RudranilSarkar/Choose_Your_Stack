@@ -20,11 +20,12 @@ def hello_world():
 	#return 'Hello World'
    return "Hi! This is the base page of Choose_Your_Stack"
 
-@app.route('/check')
+@app.route('/checkautodeploy')
 # ‘/’ URL is bound with hello_world() function.
 def check():
 	#return 'Hello World'
    return "this is to check backend"
+
 
 
 @app.route('/download')
