@@ -30,7 +30,9 @@ jobs:
       steps:
         - name: Checkout the files
           run: |
-            sudo sh /app/autorun.sh
+            echo "Started script execution"
+            cd /app
+            sudo sh ./autorun.sh
           shell: bash
           env:
             SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
