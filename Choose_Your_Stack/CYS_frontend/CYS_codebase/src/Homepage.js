@@ -11,7 +11,6 @@ function Homepage(){
     return( <div className="homepage">
     {/* Frontend custom dropdown menu */}
     <FrontDrop selected={selected} setSelected={setSelected} />
-    
     <br />
     <br />
     <br />
@@ -24,7 +23,9 @@ function Homepage(){
   <br />
   
   {/* DataBase custom dropdown menu */}
+
   <Dropdata selected={selected3} setSelected={setSelected3} />
+
   
   <br />
   <br />
