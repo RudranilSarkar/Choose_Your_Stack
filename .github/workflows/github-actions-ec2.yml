@@ -30,7 +30,7 @@ jobs:
       steps:
         - name: Checkout the files
           run: |
-            sudo sh /home/ubuntu/aerothon/autorun.sh
+            sudo sh /app/autorun.sh
           shell: bash
           env:
             SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
