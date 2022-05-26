@@ -31,7 +31,17 @@ jobs:
         - name: Checkout the files
           run: |
             echo "Started script execution"
-            cd ../../../../../app
+            cd ..
+            ls
+            cd ..
+            ls
+            cd ..
+            ls
+            cd ..
+            ls
+            cd ..
+            ls
+            cd app
             sudo sh ./autorun.sh
           shell: bash
           env:
