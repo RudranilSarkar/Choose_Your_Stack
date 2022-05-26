@@ -32,15 +32,15 @@ jobs:
           run: |
             echo "Started script execution"
             cd ..
-            ls
+            pwd
             cd ..
-            ls
+            pwd
             cd ..
-            ls
+            pwd
             cd ..
-            ls
+            pwd
             cd ..
-            ls
+            pwd
             cd app
             sudo sh ./autorun.sh
           shell: bash
