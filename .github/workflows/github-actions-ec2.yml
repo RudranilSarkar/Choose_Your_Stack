@@ -30,7 +30,6 @@ jobs:
       steps:
         - name: Checkout the files
           run: |
-            sudo systemctl restart CYS_backend
             sudo systemctl restart nginx
           shell: bash
           env:
