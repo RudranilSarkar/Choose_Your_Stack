@@ -22,9 +22,10 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
-  postdeploy:
-    needs: deploy
+
+  post-deploy:
     - name: Run scripts after deploy
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the files
