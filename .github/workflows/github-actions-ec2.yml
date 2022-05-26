@@ -29,7 +29,6 @@ jobs:
       needs: deploy
       steps:
         - name: Checkout the files
-          uses: actions/checkout@v2
           run: |
             sudo systemctl restart CYS_backend
             sudo systemctl restart nginx
