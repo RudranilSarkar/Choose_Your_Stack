@@ -1,7 +1,7 @@
 import { useState } from "react";
-function Dropdown({ selected, setSelected }) {
+function Dropdata({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
-  const options = ["React"];
+  const options = ["SQL"];
   return (
     <div className="drop">
       <div className="drop-btn" onClick={(e) => setIsActive(!isActive)}>
@@ -27,4 +27,4 @@ function Dropdown({ selected, setSelected }) {
   );
 }
 
-export default Dropdown;
+export default Dropdata;

@@ -29,14 +29,14 @@ input[type=text], select {
   height: 100vh;
 }
 
-.dropdown {
+.drop {
   width: 400px;
   user-select: none;
   margin: 10px auto;
   position: relative;
   
 }
-.dropdown .dropdown-btn {
+.drop .drop-btn {
   padding: 15px 20px;
   background: #fff;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
@@ -48,7 +48,7 @@ input[type=text], select {
   justify-content: space-between;
 }
 
-.dropdown .dropdown-content {
+.drop .drop-content {
   position: absolute;
   top: 110%;
   left: 0;
@@ -58,15 +58,16 @@ input[type=text], select {
   font-weight: 500;
   color: #333;
   width: 95%;
+  cursor: pointer;
 }
-.dropdown .dropdown-content .dropdown-item {
+.drop .drop-content .drop-item {
   padding: 10px;
   cursor: pointer;
   transition: all 0.2s;
 }
-.dropdown .dropdown-content .dropdown-item:hover {
+.drop .drop-content .drop-item:hover {
   background: #f4f4f4;
-  display: inline-block;
+  cursor: pointer;
 }
 
 .Download {

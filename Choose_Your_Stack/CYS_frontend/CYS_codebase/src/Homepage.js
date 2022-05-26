@@ -1,6 +1,6 @@
 import FrontDrop from "./Dropdown";
-import Dropback from "./Drop2";
-import Dropdata from "./Drop3";
+import Dropback from "./Dropback";
+import Dropdata from "./Dropdata";
 import React from "react";
 import { useState } from "react";
 function Homepage(){
