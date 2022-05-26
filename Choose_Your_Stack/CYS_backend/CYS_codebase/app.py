@@ -20,7 +20,7 @@ CORS(app)
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
 	#return 'Hello World'
-   return "Hi! This is the base page of Choose_Your_Stack"
+   return "Connected to Backend"
 
 @app.route('/checkautodeploy')
 # ‘/’ URL is bound with hello_world() function.
