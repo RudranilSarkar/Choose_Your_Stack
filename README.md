@@ -32,24 +32,24 @@ This Repo has been implemented in a ec2 t2.micro ubuntu 20.04 instance via Githu
 
 ### Directory Structure:
 
--Choose_Your_Stack
-    -CYS_backend
-        -CYS_codebase
-            -{all of backend code of the webapp}
-    -CYS_frontend
-        -CYS_codebase
-            -{all of frontend code of the webapp}
-    -template_stack
-        -back_end_template
-            -{Backend template Folders}(More of theese can can be added later on)
-        -front_end_template
-            -{frontend template Folders}(More of theese can can be added later on)
-    -temp
--.github
-    -workflows
-        -github-action-ec2.yml
--README.md
--version.txt
+	-Choose_Your_Stack
+	    -CYS_backend
+		-CYS_codebase
+		    -{all of backend code of the webapp}
+	    -CYS_frontend
+		-CYS_codebase
+		    -{all of frontend code of the webapp}
+	    -template_stack
+		-back_end_template
+		    -{Backend template Folders}(More of theese can can be added later on)
+		-front_end_template
+		    -{frontend template Folders}(More of theese can can be added later on)
+	    -temp
+	-.github
+	    -workflows
+		-github-action-ec2.yml
+	-README.md
+	-version.txt
 
 
 ### Installation guide:
