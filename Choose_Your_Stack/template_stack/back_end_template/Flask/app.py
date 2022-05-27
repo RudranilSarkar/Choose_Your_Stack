@@ -2,6 +2,7 @@ import os
 import json
 from flask import Flask
 from flask_cors import CORS
+import postgre_conex as pgc
 # Flask constructor takes the name of
 # current module (__name__) as argument.
 
@@ -22,6 +23,17 @@ def hello_world():
 # ‘/’ URL is bound with hello_world() function.
 def connection():
 	return 'You are connected to back-end'
+
+@app.route('/dbconnect')
+# ‘/’ URL is bound with hello_world() function.
+def dbconnect():
+	with open(os.path.join(parent_dir_path,'db_config.json')) as json_file:
+		data = json.load(json_file)
+	db_con=data
+	conn=pgc.postgreconnect(db_con)
+	query=db_con["query"]
+	return pgc.postgreexec(conn,query)
+
     
 if __name__ == '__main__':
 	# run() method of Flask class runs the application
