@@ -54,14 +54,14 @@ def download_Object():
       print(e)
       return ("Not Executed:"+e)
 
-@app.route('/downloaddynamic')
+@app.route('/dynamic', methods = ["GET","POST"])
 
-def download_Object_Dynamic():
+def Dynamic():
    temp_dict=dict()
-   temp_dict["f_name"] = request.form.get("f_name")
-   temp_dict["f_port"] = request.form.get("f_port")
+   temp_dict["f_name"] = request.form.get('f_name')
+   temp_dict["f_port"] = int(request.form.get('f_port'))
    temp_dict["b_name"] = request.form.get("b_name")
-   temp_dict["b_port"] = request.form.get("b_port")
+   temp_dict["b_port"] = int(request.form.get("b_port"))
    temp_dict["db_name"] = request.form.get("db_name")
    #for testing only
    data = dict()
@@ -70,6 +70,7 @@ def download_Object_Dynamic():
    data["b_name"]="Flask"
    data["b_port"]=8011
    data["db_name"]="Redshift"
+
    try:
       srcFileName=util.get_template(temp_dict)
       return send_file(srcFileName, as_attachment=True)
@@ -81,4 +82,4 @@ def download_Object_Dynamic():
 if __name__ == '__main__':
 	# run() method of Flask class runs the application
 	# on the local development server.
-	app.run(host='0.0.0.0')
+	app.run(host='0.0.0.0',debug = True)

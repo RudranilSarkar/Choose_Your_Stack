@@ -1,7 +1,7 @@
 import { useState } from "react";
 function Dropdata({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
-  const options = ["SQL"];
+  const options = ["Postgre","Redshift"];
   return (
     <div className="drop">
       <div className="drop-btn" onClick={(e) => setIsActive(!isActive)}>

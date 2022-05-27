@@ -3,7 +3,10 @@ import Dbutton from './Dbutton.js'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import "./styles.css"
+import { useState } from "react";
 function Form(){
+  const [f_port, setF_port] = useState('');
+  const [b_port, setB_port] = useState('');
     return(
         
     <div>
@@ -18,12 +21,12 @@ function Form(){
       autoComplete="off"
     >
       <div>
-      <TextField id="outlined-search" label="Front end port" type="search" />
-      <TextField id="outlined-search" label="Back end port" type="search" />
+      <TextField id="f_port" label="Front end port" type="search" onChange={e => setF_port(e.target.value)}/>
+      <TextField id="b_port" label="Back end port" type="search" onChange={e => setB_port(e.target.value)}/>
         </div>
         </Box>
         <Homepage />
-        <Dbutton/>
+        <Dbutton f_port={f_port} b_port={b_port}/>
     </div>
     )
 }

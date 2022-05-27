@@ -1,1 +1,1 @@
-{"F_NAME": "REACT", "F_PORT": 8010, "B_NAME": "FLASK", "B_PORT": 8011, "DB_NAME": "REDSHIFT"}
+{"f_name": "React", "f_port": 8050, "b_name": "Flask", "b_port": 8051, "db_name": "Postgre"}
