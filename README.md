@@ -87,9 +87,9 @@ This should Start the webapp of CYS. The web app should be accessible via "hittp
 
 **OS**: Ubuntu 20.04
 
-**Techstack**:React.js,flask(python)
+**Techstack**:React.js, flask(python)
 
-**Hosting**: nginx,uwsgi
+**Hosting**: nginx, uwsgi
 
 **Cloud**: aws ec2 (t2.micro)
 
