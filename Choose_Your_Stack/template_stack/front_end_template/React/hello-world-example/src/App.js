@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+let config = require('./config.json');
 
 class App extends React.Component {
    
@@ -17,7 +18,7 @@ class App extends React.Component {
   // execute the code 
   componentDidMount() {
 
-fetch("http://localhost:8011/connection")
+fetch("http://localhost:"+config.b_port+"/connection")
   .then(response => response.text())
   .then(result =>{this.setState({
     items : result,

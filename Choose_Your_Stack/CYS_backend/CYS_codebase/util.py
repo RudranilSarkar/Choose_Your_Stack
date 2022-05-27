@@ -28,6 +28,13 @@ def get_frontend_ready(data):
         env_path=os.path.join(template_frontend_path,str(data["f_name"]),"hello-world-example",".env")
         with open(env_path,"w") as f:
             f.write("port="+str(data["f_port"]))
+        src_path=os.path.join(template_frontend_path,str(data["f_name"]),"hello-world-example","src","config.json")
+        f1 = open(temp_config_path, "r")
+        f2 = open(src_path, "w")
+        for line in f1:
+            f2.write(line.upper()) 
+        f1.close()
+        f2.close()
 
 def zip_directory(f_path,b_path):
     with zipfile.ZipFile(temp_zip_path,'w',zipfile.ZIP_DEFLATED) as zipf:
