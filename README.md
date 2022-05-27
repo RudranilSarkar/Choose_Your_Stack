@@ -1,7 +1,9 @@
 # Choose_Your_Stack
+
 Team Name: Futurists
 
 Summary:
+
 This is a Webapp (Backend + Frontend) which can help you build cross-platform Full stack apps easily! This webapp is developed as a prototype/POC for the Finale Problem statement of Aerotho-4.0. The Backend is created using Flask(Python) and for Frontend we have used React.js.
 
 Funtionality:
@@ -20,7 +22,7 @@ db_config.json file : This file will need to be populated by the developer/user.
 
 readme.md : This will help hte developer/user to host the backend and frontend templates with minimalistic steps.
 
-***Point to note- Once both the backend and frontend templates are hosted ,they will be preconnected that means frontend will fetch the data sent from backend and the API end point it will fetch the data from is "/connection".
+*Point to note- Once both the backend and frontend templates are hosted ,they will be preconnected that means frontend will fetch the data sent from backend and the API end point it will fetch the data from is "/connection".
 
 CICD Implementation :
 
@@ -50,7 +52,7 @@ Directory Structure:
 
 Installation guide:
 
-***This guide is for installing it locally. To host it in a public ip/domain, You will need to install nginx/apache or any similar web servers and follow their guide line***
+*This guide is for installing it locally. To host it in a public ip/domain, You will need to install nginx/apache or any similar web servers and follow their guide line
 
 Prerequisites-
     1.Node is needed to be installed.
@@ -58,7 +60,7 @@ Prerequisites-
 Steps-
     Clone the repo to your local machine. Go to the folder "Choose_Your_Stack/CYS_backend/CYS_codebase/" and run the command :
                                 python app.py
-    *~Notes~* You may have to install some dependant python libraries when promted.
+    *Notes* You may have to install some dependant python libraries when promted.
 
     Go to the folder "Choose_Your_Stack/CYS_frontend/CYS_codebase/" and run the following commands :
                                 npm install package.json
