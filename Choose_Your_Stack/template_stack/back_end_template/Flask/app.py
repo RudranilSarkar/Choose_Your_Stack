@@ -24,15 +24,16 @@ def hello_world():
 def connection():
 	return 'You are connected to back-end'
 
-@app.route('/dbconnect')
+@app.route('/dbconnection')
 # ‘/’ URL is bound with hello_world() function.
-def dbconnect():
+def dbconnection():
 	with open(os.path.join(parent_dir_path,'db_config.json')) as json_file:
 		data = json.load(json_file)
 	db_con=data
 	conn=pgc.postgreconnect(db_con)
 	query=db_con["query"]
 	return pgc.postgreexec(conn,query)
+
 
     
 if __name__ == '__main__':

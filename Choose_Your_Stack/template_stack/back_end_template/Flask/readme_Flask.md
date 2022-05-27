@@ -7,6 +7,7 @@ GUIDE FOR WINDOWS:
         2.Flask should be installed
 
             command: pip install Flask
+        3. important libraries : flask-cors, psycopg2-binary
     
     User guide: 
 
