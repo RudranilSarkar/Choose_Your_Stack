@@ -21,7 +21,7 @@ const Dbutton=({ f_port, b_port }) => {
     data_send.append('b_name', 'Flask');
     data_send.append('db_name', 'Postgre');
         axios({
-        url: 'http://127.0.0.1:5000/dynamic', //your url
+        url: 'http://107.22.158.98:5000/dynamic', //your url
         method: 'POST',
         responseType: 'blob',
         data: data_send, // important
