@@ -22,7 +22,7 @@ def hello_world():
 @app.route('/connection')
 # ‘/’ URL is bound with hello_world() function.
 def connection():
-	return 'You are connected to back-end'
+	return 'You are connected to  Flask back-end'
 
 @app.route('/dbconnection')
 # ‘/’ URL is bound with hello_world() function.
