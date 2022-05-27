@@ -1,7 +1,7 @@
 import { useState } from "react";
 function Dropback({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
-  const options = ["Flask"];
+  const options = ["Flask","Node"];
   return (
     <div className="drop">
       <div className="drop-btn" onClick={(e) => setIsActive(!isActive)}>
