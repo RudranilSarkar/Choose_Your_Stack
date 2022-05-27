@@ -23,7 +23,7 @@ def get_config_ready(data):
     json_string = json.dumps(data)
     with open(temp_config_path,"w") as f:
         f.write(json_string)
-    db_s="{dbname : ,host : ,port : ,user : ,password : ,query :}"
+    db_s=json.dumps({"dbname" :"" ,"host" : "","port" : "","user" : "","password" : "","query" :""})
     with open(temp_db_config_path,"w") as f:
         f.write(db_s)
 
